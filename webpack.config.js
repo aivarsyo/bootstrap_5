@@ -79,7 +79,7 @@ module.exports = {
 
 
             {
-                test: /\.(png|jpe?g|gif)$/i,
+                test: /\.(png|jpe?g|gif|svg)$/i,
                 use: [
                   {
                     loader: 'file-loader',
@@ -102,16 +102,17 @@ module.exports = {
             filename: "./index.html"
         }),
 
+        new HtmlWebPackPlugin({
+            template: "./src/flex.html",
+            filename: "./grid.html"
+        }),
+
 
         new MiniCssExtractPlugin({
 			filename: './assets/css/[name].' + PACKAGE.version + '.css',
 			chunkFilename: './assets/css/[id].[hash].css'
 		}),
-
-
         
-
-
         new CleanWebpackPlugin()
     ]
 }

@@ -49,8 +49,10 @@
     "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
-    "gsap": "^3.5.0",
-    "lodash": "^4.17.20"
+    "bootstrap": "^5.0.0-alpha1",
+    "bootstrap-icons": "^1.0.0-alpha5",
+    "lodash": "^4.17.20",
+    "popper.js": "^1.16.1"
   },
   "bugs": {
     "url": "https://github.com/aivarsyo/bootstrap_5/issues"

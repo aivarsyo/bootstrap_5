@@ -1,0 +1,58 @@
+// Variables
+
+@font-face {
+	font-family: 'Ginto';
+	src: url('../fonts/GintoNordTrial-Regular.woff') format('woff');
+}
+
+
+@import "style";
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+body{
+    background-color: black;
+    font-family: 'Ginto';
+}
+
+.closeNav{
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    left: 30px;
+    top: 20px;
+    z-index: 1;
+}
+
+.closeNav:hover{
+    color: red;
+}
+
+.sidenav{
+    position: fixed;
+    height: 100%;
+    left: -20%;
+
+    a{
+        text-decoration: none;
+        color: white;
+        @include font-size(1.5rem);
+    }
+
+    a:hover{
+        color: red;
+    }
+
+    &__move{
+        animation: sidenav__move 0.4s forwards ease-in;
+    }
+
+    @keyframes sidenav__move{
+to{
+    left: 0;
+}
+    }
+}
+
+
+
+
