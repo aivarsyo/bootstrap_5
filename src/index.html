@@ -5,7 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap 5 Alpha Test</title>
 </head>
-<body class="d-flex text-center bg-secondary">
+<body class="d-flex text-center" data-barba="wrapper">
+
+    <ul class="transition">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+
+    <span class="closeNav h2">&#9776;</span>
+
+  <section class="sidenav d-flex flex-column ml-4 mt-4">
+
+    
+
+ <div class="sidenav__up d-flex flex-column mt-5">
+  <a href="index.html">Cases</a>
+  <a href="#">News</a>
+  <a href="#">Profile</a>
+  <a href="#">Contact</a>
+</div>
+
+<div class="sidenav__down d-flex flex-column mt-3">
+
+  <a href="#">Branding</a>
+  <a href="#">Visual Identity</a>
+  <a href="#">Digital Design</a>
+  <a href="#">Graphic Design</a>
+  <a href="#">Naming</a>
+</div>
+
+</section>
+
+        <main data-barba="container" data-barba-namespace="home">
+
+            
+
     <form class="form-login">
         <img 
         src="../node_modules/bootstrap-icons/icons/bootstrap.svg" 
@@ -49,5 +86,9 @@
 
         
     </form>
+
+    <a class="link h1" href="flex.html">go to flex</a>
+
+        </main>
 </body>
 </html>

@@ -104,7 +104,7 @@ module.exports = {
 
         new HtmlWebPackPlugin({
             template: "./src/flex.html",
-            filename: "./grid.html"
+            filename: "./flex.html"
         }),
 
 

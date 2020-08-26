@@ -10,8 +10,12 @@
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
 body{
-    background-color: black;
+    background-color: grey;
     font-family: 'Ginto';
+}
+
+main{
+    margin: auto;
 }
 
 .closeNav{
@@ -52,6 +56,32 @@ to{
 }
     }
 }
+
+.link{
+    color: white;
+}
+
+ul.transition{
+    display: flex;
+    position: absolute;
+    z-index: 10;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    pointer-events: none;
+
+    li{
+        transform: scaleY(0);
+        background: white;
+        width: 20%;
+        list-style: none;
+    }
+}
+
+
 
 
 

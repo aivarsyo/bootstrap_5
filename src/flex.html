@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Testing Flex in Bootstrap</title>
 </head>
-<body>
+<body data-barba="wrapper">
 
   <span class="closeNav h2">&#9776;</span>
 
@@ -14,7 +14,7 @@
     
 
  <div class="sidenav__up d-flex flex-column mt-5">
-  <a href="#">Cases</a>
+  <a href="index.html">Cases</a>
   <a href="#">News</a>
   <a href="#">Profile</a>
   <a href="#">Contact</a>
@@ -30,5 +30,15 @@
 </div>
 
 </section>
+
+  <main data-barba="container" data-barba-namespace="flex">
+
+    <section class="d-flex container-fluid justify-content-center">
+    
+    <a class="link h1" href="index.html">go to login form</a>
+
+  </section>
+
+</main>
 </body>
 </html>

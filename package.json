@@ -49,8 +49,10 @@
     "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
+    "@barba/core": "^2.9.7",
     "bootstrap": "^5.0.0-alpha1",
     "bootstrap-icons": "^1.0.0-alpha5",
+    "gsap": "^3.5.0",
     "lodash": "^4.17.20",
     "popper.js": "^1.16.1"
   },
